@@ -188,7 +188,6 @@ Momentum builds momentum.
 
 🏁 Getting Started
 
-git clone https://github.com/your-repo/momentum
 cd momentum
 
 # Backend
