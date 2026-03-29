@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;700&family=Nunito:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-surface-container-lowest: #0e0e13;
+  --color-outline-variant: #464554;
+  --color-outline: #908fa0;
+  --color-surface-variant: #35343a;
+  --color-surface-tint: #c0c1ff;
+  --color-surface: #131318;
+  --color-background: #131318;
+  --color-secondary: #4edea3;
+  --color-on-tertiary: #472a00;
+  --color-on-surface: #e4e1e9;
+  --color-primary: #c0c1ff;
+  --color-surface-container: #1f1f25;
+  --color-surface-dim: #131318;
+  --color-primary-container: #8083ff;
+  --color-on-background: #e4e1e9;
+  --color-error: #ffb4ab;
+  --color-surface-bright: #39383e;
+  --color-on-tertiary-fixed-variant: #653e00;
+  --color-surface-container-high: #2a292f;
+  --color-on-surface-variant: #c7c4d7;
+  --color-secondary-container: #00a572;
+  --color-inverse-primary: #494bd6;
+  --color-tertiary-container: #ca8100;
+  --color-tertiary: #ffb95f;
+  --color-primary-fixed: #e1e0ff;
+  --color-surface-container-low: #1b1b20;
+  --color-on-primary: #1000a9;
+  --color-surface-container-highest: #35343a;
+  --color-on-primary-container: #0d0096;
+  --color-error-container: #93000a;
+  --color-zap-gold: #fbbf24;
+  --color-zap-amber: #d97706;
+  --color-on-tertiary-fixed: #2a1700;
+
+  --font-headline: "Instrument Serif", serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-kid: "Nunito", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+  --radius-4xl: 2.5rem;
+  --radius-full: 9999px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-family: "Material Symbols Outlined";
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.ms-fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+html, body {
+  min-height: 100dvh;
+  background-color: #0a0a0f;
+  color: #e4e1e9;
+  -webkit-font-smoothing: antialiased;
+  font-family: "DM Sans", sans-serif;
+}
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #35343a; border-radius: 10px; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.star-field {
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 50px 160px, #c0c1ff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 80px 120px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 110px 40px, #fff, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 150px 80px, #fbbf24, rgba(0,0,0,0));
+  background-size: 200px 200px;
+  background-repeat: repeat;
+}
+
+.glass {
+  background: rgba(31, 31, 37, 0.5);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+.glass-dark {
+  background: rgba(19, 19, 26, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.glass-card {
+  background: rgba(53, 52, 58, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.zap-gradient {
+  background: radial-gradient(circle at 30% 30%, #fbbf24, #f59e0b);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
