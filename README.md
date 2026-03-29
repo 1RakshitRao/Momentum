@@ -1,76 +1,212 @@
-# Momentum ⚡
 
-**A voice-first ADHD companion for kids** — built to protect self-worth, build competence through tiny wins, and change the environment around the child.
+🚀 Momentum — ADHD Voice Copilot
 
----
+Momentum helps you start.
+Not plan. Not organize. Not optimize.
+Just start.
 
-## What it does
+⸻
 
-Momentum helps children with ADHD plan, start, and stay focused on tasks through:
+🧠 The Problem
 
-- 🎙️ **Voice-first task capture** — talk to Zap, the AI companion, to add tasks
-- 🗺️ **Micro-step guidance** — every task broken into bite-sized, doable steps
-- ⏱️ **Gentle nudge system** — child estimates time, Zap checks in at 10% and 40% elapsed
-- 💛 **Feelings check-in** — 12-emotion grid, voice response from Zap to calm the child
-- ⭐ **Wins & Brave Timeline** — celebrates effort, not just outcomes
-- 🤝 **Social rehearsal** — practice real-life scenarios with Zap
-- 📅 **Smart calendar** — add events (e.g. soccer match) and get auto-generated prep tasks
-- 👨‍👩‍👧 **Parent Dashboard** — PIN-protected view with insights, alerts, and teacher notes
+Most productivity tools assume one thing:
 
----
+You can begin.
 
-## Tech Stack
+For people with ADHD, that assumption is wrong.
 
-| Layer | Tech |
-|---|---|
-| Frontend | Next.js 14 App Router · React · TypeScript · Tailwind CSS v4 · Framer Motion |
-| Backend | FastAPI · Python · SQLite |
-| AI | Anthropic Claude (claude-haiku-4-5) |
-| Voice | ElevenLabs STT (Scribe v1) + TTS (Turbo v2) |
+Task initiation failure — the neurological inability to start even simple tasks — is one of the most common and debilitating executive function challenges. It’s not procrastination. It’s not laziness. It’s a gap between intention and action.
 
----
+Momentum is built specifically for that gap.
 
-## Getting Started
+⸻
 
-### Backend
+💡 The Solution
 
-```bash
-cd /path/to/Momentumv2
-python -m venv venv && source venv/bin/activate
+Momentum is a voice-first AI copilot that uses principles from Behavioral Activation Therapy (BAT) to help users move from stuck → started in seconds.
+
+Instead of overwhelming users with lists, planning systems, or productivity hacks, Momentum:
+	•	Reduces everything to one action
+	•	Guides users through micro-steps
+	•	Stays present as a body double
+	•	Rewards starting, not finishing
+
+⸻
+
+⚡ Core Features
+
+🎤 Voice → Action
+
+Speak naturally:
+
+“I need to finish my assignment”
+
+Momentum instantly:
+	•	Structures the task
+	•	Breaks it into micro-steps
+	•	Returns a single starting action
+
+⸻
+
+🎯 “What Should I Do Now?”
+
+No lists. No decisions.
+
+One tap → one task.
+
+Designed to eliminate decision paralysis and cognitive overload.
+
+⸻
+
+🧩 Guided Start Sequence
+
+A 5-step Behavioral Activation flow:
+	1.	Sit down
+	2.	Open materials
+	3.	Do the smallest possible action
+	4.	Continue with gentle prompts
+	5.	Stay engaged with support
+
+All guided via natural voice (ElevenLabs).
+
+⸻
+
+👥 AI Body Doubling
+
+Momentum doesn’t just tell you what to do.
+
+It stays with you while you do it.
+	•	On-screen presence
+	•	Gentle nudges
+	•	No pressure, no judgment
+
+⸻
+
+📅 Invisible Planning Layer
+
+Momentum automatically handles what ADHD brains often miss:
+	•	Prep steps before events
+	•	Context switching
+	•	Time buffers
+	•	Execution sequencing
+
+No manual planning required.
+
+⸻
+
+🧒 For Kids (Zap Mode)
+
+Momentum transforms into a quest-based companion for children under 12.
+
+Meet Zap ⚡ — an animated AI guide who:
+	•	Gives one step at a time
+	•	Uses zero shame language
+	•	Celebrates every brave start
+	•	Turns tasks into quests
+
+⸻
+
+👨‍👩‍👧 Parent Dashboard
+	•	Weekly AI insights (not failure reports)
+	•	Conversation prompts
+	•	Teacher accommodation notes
+	•	Progress based on effort, not completion
+
+⸻
+
+🌱 Core Philosophy
+
+Momentum does not track failure.
+Momentum does not break streaks.
+Momentum does not judge.
+
+It tracks Brave Starts.
+
+A “brave start” = the moment a user begins.
+	•	Opened the notebook → counts
+	•	Wrote one sentence → counts
+	•	Tried for 30 seconds → counts
+
+Because for ADHD users:
+
+Starting is the hardest part.
+
+⸻
+
+🛠 Tech Stack
+
+Frontend
+	•	Next.js
+	•	Tailwind CSS
+	•	Framer Motion
+
+Backend
+	•	Python
+	•	FastAPI
+	•	SQLite
+
+AI
+	•	Anthropic Claude API
+
+Voice
+	•	ElevenLabs (TTS)
+	•	Wispr Flow (STT)
+
+⸻
+
+🧪 How It Works (Simplified Flow)
+	1.	User speaks task
+	2.	Claude structures → intent + micro-steps
+	3.	System selects next actionable step
+	4.	Voice guides user through BAT sequence
+	5.	AI stays present as a body double
+	6.	“Brave Start” is recorded
+
+⸻
+
+🎯 Why Momentum Wins
+
+Most tools optimize productivity.
+Momentum optimizes activation.
+
+Most tools measure output.
+Momentum measures courage to begin.
+
+Most tools assume discipline.
+Momentum builds momentum.
+
+⸻
+
+🚀 Future Directions
+	•	Wearable-triggered interventions (detect “freeze” moments)
+	•	Emotion-aware voice adaptation
+	•	School integrations (IEP/504 support)
+	•	Social accountability pods (safe body-doubling groups)
+	•	Adaptive micro-step generation using reinforcement learning
+
+⸻
+
+🏁 Getting Started
+
+git clone https://github.com/your-repo/momentum
+cd momentum
+
+# Backend
+cd backend
 pip install -r requirements.txt
+uvicorn main:app --reload
 
-# Add your keys
-cp .env.example .env
-# Edit .env with your ANTHROPIC_API_KEY and ELEVENLABS_API_KEY
-
-python -m uvicorn app.main:app --reload --port 8000
-```
-
-### Frontend
-
-```bash
-cd frontend1
+# Frontend
+cd ../frontend
 npm install
-npm run dev -- --port 3001
-```
+npm run dev
 
-Open [http://localhost:3001](http://localhost:3001)
 
----
+⸻
 
-## Demo
+💬 Final Thought
 
-Load demo data from **Settings → 🎬 Load Demo Data** to populate:
-- Alex (age 10) profile with struggles
-- 2 demo tasks: Math Homework + Soccer Match Prep
-- 6 emotional check-ins, 7 wins, calendar events
+Momentum is built for the moment before everything else begins.
 
-Default parent PIN: **1234**
-
----
-
-## Design Principles
-
-> "AI should not try to fix the child. It should protect self-worth, build competence through tiny wins, and change the environment around the child."
-
-Built with ❤️ for the ADHD Hackathon 2026.
+Because if you can start,
+you can do anything.
